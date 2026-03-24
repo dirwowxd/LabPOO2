@@ -20,7 +20,7 @@ public class PabellonCirugia {
         this.estado = estado;
     }
     public String toString() {
-        return "Numero: "+numero+"\nEspecialidad: "+especialidad+"\nEstado: "+estado;
+        return "Numero: "+numero+"\nEspecialidad: "+especialidad+"\nEstado: "+estado.toString().toLowerCase()+" ";
     }
     public boolean equals(Object o) {
         if (this == o) return true;

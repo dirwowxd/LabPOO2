@@ -8,11 +8,11 @@ public class DemoPabellonCirugia {
     }
     public void procesa(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ingrese datos:");
+        System.out.println("Ingrese datos... ");
         for(int i=0;i<mish.length;i++){
-            System.out.println("Pabellon numero: ");
+            System.out.print("Pabellon numero: ");
             int numero=sc.nextInt();
-            System.out.println("Especialidad: ");
+            System.out.print("Especialidad: ");
             String especialidad=sc.next();
             mish[i]=new PabellonCirugia(numero,especialidad);
         }
@@ -21,7 +21,7 @@ public class DemoPabellonCirugia {
                 mish[i].setEstado(Estado.OCUPADO);
             }
         }
-        System.out.println("Listado de pabellon cirugias:");
+        System.out.print("Listado de pabellon cirugias: ");
         for(int i=0;i<mish.length;i++){
             System.out.println(mish[i].toString());
         }
